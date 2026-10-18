@@ -25,6 +25,7 @@ insert into public.institutions (id, code, name, position) values
   ('00000000-0000-4000-8000-000000000106', 'UCC',       'Université catholique du Congo', 6),
   ('00000000-0000-4000-8000-000000000107', 'ULK',       'Université libre de Kinshasa', 7),
   ('00000000-0000-4000-8000-000000000108', 'ISP_GOMBE', 'Institut supérieur pédagogique de la Gombe', 8),
+  ('00000000-0000-4000-8000-000000000109', 'HEC_KIN',   'Haute école de commerce de Kinshasa (HEC, ex-ISC)', 9),
   ('00000000-0000-4000-8000-000000000199', 'AUTRE',     'Autre établissement', 99);
 
 -- -----------------------------------------------------------------------------
