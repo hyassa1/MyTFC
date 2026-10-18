@@ -1,0 +1,57 @@
+name: montfc
+description: "MonTFC : aide méthodologique pour rédiger son TFC ou son mémoire."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.13.5
+
+dependencies:
+  archive: ^4.5.2
+  connectivity_plus: ^7.3.2
+  cryptography: ^2.9.0
+  device_info_plus: ^13.3.0
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_markdown_plus: ^1.0.12
+  flutter_riverpod: ^3.4.3
+  flutter_secure_storage: ^11.2.0
+  go_router: ^18.1.0
+  in_app_purchase: ^3.3.1
+  in_app_purchase_android: ^0.5.4
+  intl: ^0.20.3
+  path: ^1.9.1
+  path_provider: ^2.1.6
+  pdf: ^3.13.1
+  share_plus: ^13.3.1
+  sqflite: ^2.4.4+2
+  supabase_flutter: ^2.18.3
+  uuid: ^4.6.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  sqflite_common_ffi: ^2.4.4
+  xml: ^7.0.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/seed/
+    - assets/fonts/LICENSE-LiberationSerif-OFL.txt
+  # Liberation Serif : mêmes dimensions que Times New Roman (licence SIL OFL 1.1).
+  # Utilisée par l'aperçu et le PDF pour un rendu identique au Word.
+  fonts:
+    - family: LiberationSerif
+      fonts:
+        - asset: assets/fonts/LiberationSerif-Regular.ttf
+        - asset: assets/fonts/LiberationSerif-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/LiberationSerif-Italic.ttf
+          style: italic
+        - asset: assets/fonts/LiberationSerif-BoldItalic.ttf
+          weight: 700
+          style: italic

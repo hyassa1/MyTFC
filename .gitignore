@@ -1,0 +1,15 @@
+# Secrets et fichiers locaux
+montfc_app/env/*.json
+!montfc_app/env/example.json
+montfc_app/android/key.properties
+montfc_app/android/local.properties
+*.jks
+web/.env.local
+supabase/.env
+# Builds
+build/
+.dart_tool/
+node_modules/
+dist/
+.gradle/
+.DS_Store

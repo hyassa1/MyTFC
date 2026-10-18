@@ -1,0 +1,149 @@
+{
+ "schema_version": 1,
+ "variables": [
+  {
+   "key": "organisation",
+   "label": "Nom de l'organisation étudiée",
+   "example": "la SNEL Kinshasa-Est"
+  },
+  {
+   "key": "service",
+   "label": "Service ou produit évalué",
+   "example": "le paiement des factures"
+  },
+  {
+   "key": "etablissement",
+   "label": "Ton établissement",
+   "example": "l'Université de Kinshasa"
+  }
+ ],
+ "intro": "Madame, Monsieur,\nÉtudiant(e) finaliste à {{etablissement}}, je mène une enquête sur {{service}} de {{organisation}} dans le cadre de mon travail de fin d'études. Vos réponses sont anonymes et serviront uniquement à cette recherche. Merci de cocher la case qui correspond le mieux à votre avis.",
+ "sections": [
+  {
+   "title": "Identification du répondant",
+   "guidance": "Garde seulement les variables que tu analyseras dans ton chapitre de résultats (elles servent aux tableaux croisés).",
+   "questions": [
+    {
+     "id": "q1",
+     "type": "single",
+     "text": "Sexe",
+     "options": [
+      "Masculin",
+      "Féminin"
+     ]
+    },
+    {
+     "id": "q2",
+     "type": "single",
+     "text": "Tranche d'âge",
+     "options": [
+      "Moins de 25 ans",
+      "25 à 34 ans",
+      "35 à 49 ans",
+      "50 ans et plus"
+     ]
+    },
+    {
+     "id": "q3",
+     "type": "single",
+     "text": "Niveau d'études",
+     "options": [
+      "Primaire",
+      "Secondaire",
+      "Supérieur ou universitaire",
+      "Aucun"
+     ]
+    },
+    {
+     "id": "q4",
+     "type": "single",
+     "text": "Depuis combien de temps utilisez-vous {{service}} ?",
+     "options": [
+      "Moins d'un an",
+      "1 à 3 ans",
+      "Plus de 3 ans"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Accueil et information",
+   "guidance": "Une section par dimension de ta variable dépendante. Adapte les intitulés à ton terrain.",
+   "questions": [
+    {
+     "id": "q5",
+     "type": "scale",
+     "text": "Comment jugez-vous l'accueil reçu à {{organisation}} ?",
+     "scale": [
+      "Très mauvais",
+      "Mauvais",
+      "Moyen",
+      "Bon",
+      "Très bon"
+     ]
+    },
+    {
+     "id": "q6",
+     "type": "single",
+     "text": "Les informations reçues étaient-elles claires ?",
+     "options": [
+      "Oui",
+      "En partie",
+      "Non"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Délais et coût",
+   "guidance": "Formule des questions neutres, sans suggérer la réponse.",
+   "questions": [
+    {
+     "id": "q7",
+     "type": "number",
+     "text": "Combien de temps (en minutes) avez-vous attendu lors de votre dernier passage ?"
+    },
+    {
+     "id": "q8",
+     "type": "scale",
+     "text": "Le coût de {{service}} vous paraît :",
+     "scale": [
+      "Très élevé",
+      "Élevé",
+      "Raisonnable",
+      "Bas"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Appréciation générale",
+   "guidance": "Termine par une question ouverte : elle enrichit l'interprétation de tes tableaux.",
+   "questions": [
+    {
+     "id": "q9",
+     "type": "multiple",
+     "text": "Quels aspects faudrait-il améliorer en priorité ? (plusieurs réponses possibles)",
+     "options": [
+      "Accueil",
+      "Délais",
+      "Coût",
+      "Information",
+      "Autre (préciser)"
+     ]
+    },
+    {
+     "id": "q10",
+     "type": "open",
+     "text": "Quelles suggestions feriez-vous à {{organisation}} ?"
+    }
+   ]
+  }
+ ],
+ "closing": "Merci pour votre participation.",
+ "tips": [
+  "Chaque question doit servir à vérifier une de tes hypothèses : supprime les autres.",
+  "Teste ton questionnaire auprès de 5 personnes avant l'enquête et corrige les questions mal comprises.",
+  "Le nombre de questionnaires à distribuer vient du calcul de l'échantillon (outil gratuit de MonTFC)."
+ ]
+}

@@ -1,0 +1,355 @@
+{
+ "00000000-0000-4000-8000-000000000301": {
+  "schema_version": 1,
+  "page": {
+   "size": "A4",
+   "margins_cm": {
+    "top": 2,
+    "bottom": 2,
+    "left": 2.5,
+    "right": 2
+   },
+   "border": "double"
+  },
+  "font": {
+   "family": "Times New Roman",
+   "size": 12
+  },
+  "blocks": [
+   {
+    "type": "text",
+    "text": "UNIVERSITÉ DE KINSHASA",
+    "align": "center",
+    "size": 16,
+    "bold": true
+   },
+   {
+    "type": "text",
+    "text": "FACULTÉ DE {{faculty|upper}}",
+    "align": "center",
+    "size": 13,
+    "bold": true,
+    "space_before_pt": 6
+   },
+   {
+    "type": "text",
+    "text": "DÉPARTEMENT DE {{department|upper}}",
+    "align": "center",
+    "size": 12,
+    "bold": true,
+    "if": "department"
+   },
+   {
+    "type": "rule",
+    "thickness_pt": 1
+   },
+   {
+    "type": "spacer",
+    "height_cm": 3
+   },
+   {
+    "type": "box",
+    "border": "single",
+    "padding_cm": 0.4,
+    "blocks": [
+     {
+      "type": "text",
+      "text": "{{title|upper}}",
+      "align": "center",
+      "size": 14,
+      "bold": true
+     }
+    ]
+   },
+   {
+    "type": "spacer",
+    "height_cm": 2
+   },
+   {
+    "type": "text",
+    "text": "Par",
+    "align": "center",
+    "italic": true
+   },
+   {
+    "type": "text",
+    "text": "{{student_name|upper}}",
+    "align": "center",
+    "size": 13,
+    "bold": true,
+    "space_before_pt": 4
+   },
+   {
+    "type": "spacer",
+    "height_cm": 2
+   },
+   {
+    "type": "text",
+    "text": "{{grade}} en {{discipline}}",
+    "align": "justify",
+    "indent_left_ratio": 0.45,
+    "italic": true
+   },
+   {
+    "type": "spacer",
+    "height_cm": 1
+   },
+   {
+    "type": "text",
+    "text": "Directeur : {{director}}",
+    "align": "left",
+    "indent_left_ratio": 0.45,
+    "bold": true
+   },
+   {
+    "type": "text",
+    "text": "Encadreur : {{supervisor}}",
+    "align": "left",
+    "indent_left_ratio": 0.45,
+    "bold": true,
+    "if": "supervisor"
+   },
+   {
+    "type": "spacer",
+    "height_cm": 3
+   },
+   {
+    "type": "text",
+    "text": "Année académique {{academic_year}}",
+    "align": "center",
+    "bold": true
+   }
+  ]
+ },
+ "00000000-0000-4000-8000-000000000302": {
+  "schema_version": 1,
+  "page": {
+   "size": "A4",
+   "margins_cm": {
+    "top": 2,
+    "bottom": 2,
+    "left": 2.5,
+    "right": 2
+   },
+   "border": "single"
+  },
+  "font": {
+   "family": "Times New Roman",
+   "size": 12
+  },
+  "blocks": [
+   {
+    "type": "text",
+    "text": "RÉPUBLIQUE DÉMOCRATIQUE DU CONGO",
+    "align": "center",
+    "size": 12,
+    "bold": true
+   },
+   {
+    "type": "text",
+    "text": "ENSEIGNEMENT SUPÉRIEUR ET UNIVERSITAIRE",
+    "align": "center",
+    "size": 11
+   },
+   {
+    "type": "text",
+    "text": "UNIVERSITÉ PÉDAGOGIQUE NATIONALE",
+    "align": "center",
+    "size": 15,
+    "bold": true,
+    "space_before_pt": 8
+   },
+   {
+    "type": "text",
+    "text": "U.P.N.",
+    "align": "center",
+    "size": 12,
+    "bold": true
+   },
+   {
+    "type": "text",
+    "text": "FACULTÉ DE {{faculty|upper}}",
+    "align": "center",
+    "size": 12,
+    "bold": true,
+    "space_before_pt": 8
+   },
+   {
+    "type": "text",
+    "text": "DÉPARTEMENT DE {{department|upper}}",
+    "align": "center",
+    "size": 12,
+    "if": "department"
+   },
+   {
+    "type": "spacer",
+    "height_cm": 3
+   },
+   {
+    "type": "rule",
+    "thickness_pt": 1.5
+   },
+   {
+    "type": "text",
+    "text": "{{title|upper}}",
+    "align": "center",
+    "size": 14,
+    "bold": true,
+    "space_before_pt": 6,
+    "space_after_pt": 6
+   },
+   {
+    "type": "rule",
+    "thickness_pt": 1.5
+   },
+   {
+    "type": "spacer",
+    "height_cm": 2
+   },
+   {
+    "type": "text",
+    "text": "{{student_name|upper}}",
+    "align": "center",
+    "size": 13,
+    "bold": true
+   },
+   {
+    "type": "spacer",
+    "height_cm": 1.5
+   },
+   {
+    "type": "text",
+    "text": "{{grade}} en {{discipline}}",
+    "align": "justify",
+    "indent_left_ratio": 0.45
+   },
+   {
+    "type": "spacer",
+    "height_cm": 1
+   },
+   {
+    "type": "text",
+    "text": "Directeur : {{director}}",
+    "align": "left",
+    "indent_left_ratio": 0.45
+   },
+   {
+    "type": "text",
+    "text": "Encadreur : {{supervisor}}",
+    "align": "left",
+    "indent_left_ratio": 0.45,
+    "if": "supervisor"
+   },
+   {
+    "type": "spacer",
+    "height_cm": 2.5
+   },
+   {
+    "type": "text",
+    "text": "Année académique {{academic_year}}",
+    "align": "center",
+    "bold": true
+   }
+  ]
+ },
+ "00000000-0000-4000-8000-000000000303": {
+  "schema_version": 1,
+  "page": {
+   "size": "A4",
+   "margins_cm": {
+    "top": 2.5,
+    "bottom": 2.5,
+    "left": 3,
+    "right": 2.5
+   },
+   "border": "none"
+  },
+  "font": {
+   "family": "Times New Roman",
+   "size": 12
+  },
+  "blocks": [
+   {
+    "type": "text",
+    "text": "{{institution_name|upper}}",
+    "align": "center",
+    "size": 15,
+    "bold": true
+   },
+   {
+    "type": "text",
+    "text": "FACULTÉ DE {{faculty|upper}}",
+    "align": "center",
+    "size": 12,
+    "bold": true,
+    "space_before_pt": 6
+   },
+   {
+    "type": "text",
+    "text": "DÉPARTEMENT DE {{department|upper}}",
+    "align": "center",
+    "size": 12,
+    "if": "department"
+   },
+   {
+    "type": "spacer",
+    "height_cm": 4
+   },
+   {
+    "type": "text",
+    "text": "{{title|upper}}",
+    "align": "center",
+    "size": 14,
+    "bold": true
+   },
+   {
+    "type": "spacer",
+    "height_cm": 2.5
+   },
+   {
+    "type": "text",
+    "text": "Présenté par : {{student_name}}",
+    "align": "center",
+    "size": 12,
+    "bold": true
+   },
+   {
+    "type": "spacer",
+    "height_cm": 2
+   },
+   {
+    "type": "text",
+    "text": "{{grade}} en {{discipline}}",
+    "align": "justify",
+    "indent_left_ratio": 0.4
+   },
+   {
+    "type": "spacer",
+    "height_cm": 1
+   },
+   {
+    "type": "text",
+    "text": "Directeur : {{director}}",
+    "align": "left",
+    "indent_left_ratio": 0.4
+   },
+   {
+    "type": "text",
+    "text": "Encadreur : {{supervisor}}",
+    "align": "left",
+    "indent_left_ratio": 0.4,
+    "if": "supervisor"
+   },
+   {
+    "type": "spacer",
+    "height_cm": 3
+   },
+   {
+    "type": "text",
+    "text": "Année académique {{academic_year}}",
+    "align": "center",
+    "bold": true
+   }
+  ]
+ }
+}
