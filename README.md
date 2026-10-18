@@ -175,7 +175,7 @@ flutter build apk --flavor direct -t lib/main_direct.dart --release --split-per-
 ls -lh build/app/outputs/flutter-apk/
 ```
 
-Leviers déjà en place : `--split-per-abi`, R8 (`minifyEnabled` + `shrinkResources`), pas de SDK lourd,
+Mesuré le 18/10/2026 : **10,7 Mo** (arm64), 10,5 Mo (armeabi-v7a). Leviers déjà en place : `--split-per-abi`, bibliothèques natives compressées (`useLegacyPackaging`), R8 (`minifyEnabled` + `shrinkResources`), pas de SDK lourd,
 une seule police embarquée (Liberation Serif, 4 fichiers, environ 1,5 Mo), icônes Material réduites
 automatiquement. L'APK n'a pas pu être construit dans l'environnement de développement (accès aux
 serveurs Google bloqué) : **mesurer la taille au premier build**. Sur le Play Store, le bundle permet à

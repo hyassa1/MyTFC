@@ -59,6 +59,14 @@ android {
         }
     }
 
+    // APK direct : bibliothèques natives compressées (22,1 Mo → 10,7 Mo en arm64).
+    // Elles sont décompressées à l'installation ; sans effet sur le bundle Play Store.
+    packaging {
+        jniLibs {
+            useLegacyPackaging = true
+        }
+    }
+
     buildTypes {
         release {
             // Sans key.properties (développement), on signe avec la clé de debug.
