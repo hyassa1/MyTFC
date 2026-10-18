@@ -182,7 +182,8 @@ void main() {
     final doc = ExportBuilders.bibliography(sources, BibliographyOrder.alphabetical);
     final docx = await service.save(doc, ExportFormat.docx);
     final pdf = await service.save(doc, ExportFormat.pdf);
-    expect(docx.path, endsWith('exports/bibliographie.docx'));
+    // Séparateurs normalisés : Windows renvoie « exports\bibliographie.docx ».
+    expect(docx.path.replaceAll(r'\', '/'), endsWith('exports/bibliographie.docx'));
     expect(pdf.lengthSync(), greaterThan(1000));
   });
 }
